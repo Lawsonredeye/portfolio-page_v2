@@ -48,15 +48,15 @@ export default function JohnDoePortfolio() {
           </nav>
 
           <div className="flex items-center space-x-4">
-            <Link href="/resume.pdf" download="John_Doe_Resume.pdf">
+            <a href="/resume.pdf" download="Lawson_Omoregbee_Resume.pdf">
               <Button variant="outline" className="hidden md:inline-flex">
                 <Download className="mr-2 h-4 w-4" />
                 Resume
               </Button>
-            </Link>
-            <Link href="mailto:omoregbeeolawson@gmail.com?subject=Hiring Inquiry - Backend Developer&body=Hi Lawson,%0D%0A%0D%0AI'm interested in discussing a potential project/opportunity with you.%0D%0A%0D%0ABest regards">
+            </a>
+            <a href="mailto:omoregbeeolawson@gmail.com?subject=Hiring%20Inquiry%20-%20Backend%20Developer&body=Hi%20Lawson,%0D%0A%0D%0AI'm%20interested%20in%20discussing%20a%20potential%20project/opportunity%20with%20you.%0D%0A%0D%0ABest%20regards">
               <Button className="bg-blue-600 hover:bg-blue-700">Hire Me</Button>
-            </Link>
+            </a>
           </div>
         </div>
       </header>
@@ -83,11 +83,11 @@ export default function JohnDoePortfolio() {
                 <Button size="lg" className="text-lg px-8 bg-blue-600 hover:bg-blue-700">
                   View My Work
                 </Button>
-                <Link href="/resume.pdf" download="John_Doe_Resume.pdf">
+                <a href="/resume.pdf" download="Lawson_Omoregbee_Resume.pdf">
                   <Button variant="outline" size="lg" className="text-lg px-8 border-slate-300 hover:bg-slate-50">
                     Download Resume
                   </Button>
-                </Link>
+                </a>
               </div>
               <div className="flex items-center space-x-8 text-sm text-slate-600">
                 <div className="flex items-center space-x-2">
@@ -557,16 +557,16 @@ export default function JohnDoePortfolio() {
                 <Mail className="mr-2 h-5 w-5" />
                 Send Email
               </Button>
-              <Link href="/resume.pdf" download="lawson_omoregbee_Resume.pdf">
+              <a href="/resume.pdf" download="Lawson_Omoregbee_Resume.pdf">
                 <Button
                   size="lg"
                   variant="outline"
-                  className="text-lg px-8 border-white hover:bg-white hover:text-blue-600 text-zinc-800"
+                  className="text-lg px-8 border-white hover:bg-white hover:text-blue-600 text-white"
                 >
                   <Download className="mr-2 h-5 w-5" />
                   Download Resume
                 </Button>
-              </Link>
+              </a>
             </div>
             <div className="flex items-center justify-center space-x-6 pt-8">
               <Link
@@ -623,7 +623,10 @@ export default function JohnDoePortfolio() {
           </div>
 
           <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; {new Date().getFullYear()} Lawson Omoregbee. All rights reserved. Built with Next.js and Tailwind CSS.</p>
+            <p>
+              &copy; {new Date().getFullYear()} Lawson Omoregbee. All rights reserved. Built with Next.js and Tailwind
+              CSS.
+            </p>
           </div>
         </div>
       </footer>
