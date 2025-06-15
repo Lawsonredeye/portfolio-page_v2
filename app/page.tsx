@@ -557,7 +557,7 @@ export default function JohnDoePortfolio() {
                 <Mail className="mr-2 h-5 w-5" />
                 Send Email
               </Button>
-              <Link href="/resume.pdf" download="John_Doe_Resume.pdf">
+              <Link href="/resume.pdf" download="lawson_omoregbee_Resume.pdf">
                 <Button
                   size="lg"
                   variant="outline"
