@@ -584,7 +584,7 @@ export default function JohnDoePortfolio() {
                 <span className="hidden sm:inline">LinkedIn</span>
               </Link>
               <Link
-                href="mailto:john.doe@email.com"
+                href="mailto:omoregbeeolawson@gmail.com"
                 className="flex items-center space-x-2 text-blue-100 hover:text-white transition-colors"
               >
                 <Mail className="h-6 w-6" />
