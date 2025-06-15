@@ -570,14 +570,14 @@ export default function JohnDoePortfolio() {
             </div>
             <div className="flex items-center justify-center space-x-6 pt-8">
               <Link
-                href="https://twitter.com/johndoe"
+                href="https://x.com/LawsonRedeye"
                 className="flex items-center space-x-2 text-blue-100 hover:text-white transition-colors"
               >
                 <Twitter className="h-6 w-6" />
                 <span className="hidden sm:inline">Twitter</span>
               </Link>
               <Link
-                href="https://linkedin.com/in/johndoe"
+                href="https://linkedin.com/in/lawson-omoregbee"
                 className="flex items-center space-x-2 text-blue-100 hover:text-white transition-colors"
               >
                 <Linkedin className="h-6 w-6" />
