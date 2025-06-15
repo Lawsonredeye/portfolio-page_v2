@@ -623,7 +623,7 @@ export default function JohnDoePortfolio() {
           </div>
 
           <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; {new Date().getFullYear()} John Doe. All rights reserved. Built with Next.js and Tailwind CSS.</p>
+            <p>&copy; {new Date().getFullYear()} Lawson Omoregbee. All rights reserved. Built with Next.js and Tailwind CSS.</p>
           </div>
         </div>
       </footer>
