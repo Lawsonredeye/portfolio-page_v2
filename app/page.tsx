@@ -29,7 +29,7 @@ export default function JohnDoePortfolio() {
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600">
               <Code className="h-5 w-5 text-white" />
             </div>
-            <span className="text-xl font-bold">Lawson Omoregbee</span>
+            <span className="text-xl font-bold">Lawson Omoregbee </span>
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">
@@ -48,11 +48,15 @@ export default function JohnDoePortfolio() {
           </nav>
 
           <div className="flex items-center space-x-4">
-            <Button variant="outline" className="hidden md:inline-flex">
-              <Download className="mr-2 h-4 w-4" />
-              Resume
-            </Button>
-            <Button className="bg-blue-600 hover:bg-blue-700">Hire Me</Button>
+            <Link href="/resume.pdf" download="John_Doe_Resume.pdf">
+              <Button variant="outline" className="hidden md:inline-flex">
+                <Download className="mr-2 h-4 w-4" />
+                Resume
+              </Button>
+            </Link>
+            <Link href="mailto:omoregbeeolawson@gmail.com?subject=Hiring Inquiry - Backend Developer&body=Hi Lawson,%0D%0A%0D%0AI'm interested in discussing a potential project/opportunity with you.%0D%0A%0D%0ABest regards">
+              <Button className="bg-blue-600 hover:bg-blue-700">Hire Me</Button>
+            </Link>
           </div>
         </div>
       </header>
@@ -79,14 +83,16 @@ export default function JohnDoePortfolio() {
                 <Button size="lg" className="text-lg px-8 bg-blue-600 hover:bg-blue-700">
                   View My Work
                 </Button>
-                <Button variant="outline" size="lg" className="text-lg px-8 border-slate-300 hover:bg-slate-50">
-                  Download Resume
-                </Button>
+                <Link href="/resume.pdf" download="John_Doe_Resume.pdf">
+                  <Button variant="outline" size="lg" className="text-lg px-8 border-slate-300 hover:bg-slate-50">
+                    Download Resume
+                  </Button>
+                </Link>
               </div>
               <div className="flex items-center space-x-8 text-sm text-slate-600">
                 <div className="flex items-center space-x-2">
                   <MapPin className="h-4 w-4 text-blue-600" />
-                  <span>Remote / San Francisco</span>
+                  <span>Remote / Nigeria</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Calendar className="h-4 w-4 text-green-600" />
@@ -302,7 +308,9 @@ export default function JohnDoePortfolio() {
               <CardHeader>
                 <div className="flex items-center justify-between">
                   <CardTitle className="text-lg">E-commerce Platform Backend</CardTitle>
-                  <ExternalLink className="h-4 w-4 text-slate-400" />
+                  <Link href="https://github.com/Lawsonredeye/go-ecommerce" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="h-4 w-4 text-slate-400 hover:text-blue-600 transition-colors" />
+                  </Link>
                 </div>
                 <CardDescription>Golang, Gin, GORM, MySQL</CardDescription>
               </CardHeader>
@@ -331,7 +339,9 @@ export default function JohnDoePortfolio() {
               <CardHeader>
                 <div className="flex items-center justify-between">
                   <CardTitle className="text-lg">URL Shortener Service</CardTitle>
-                  <ExternalLink className="h-4 w-4 text-slate-400" />
+                  <Link href="https://github.com/Lawsonredeye" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="h-4 w-4 text-slate-400 hover:text-blue-600 transition-colors" />
+                  </Link>
                 </div>
                 <CardDescription>Golang, GORM, MySQL</CardDescription>
               </CardHeader>
@@ -360,7 +370,13 @@ export default function JohnDoePortfolio() {
               <CardHeader>
                 <div className="flex items-center justify-between">
                   <CardTitle className="text-lg">GitHub Analytics Tool</CardTitle>
-                  <ExternalLink className="h-4 w-4 text-slate-400" />
+                  <Link
+                    href="https://github.com/Lawsonredeye/github-user-activity"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ExternalLink className="h-4 w-4 text-slate-400 hover:text-blue-600 transition-colors" />
+                  </Link>
                 </div>
                 <CardDescription>Python CLI Application</CardDescription>
               </CardHeader>
@@ -388,8 +404,45 @@ export default function JohnDoePortfolio() {
             <Card className="bg-white border-slate-200 hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="flex items-center justify-between">
+                  <CardTitle className="text-lg">Go-arch</CardTitle>
+                  <Link
+                    href="https://github.com/Lawsonredeye/go-architecture"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ExternalLink className="h-4 w-4 text-slate-400 hover:text-blue-600 transition-colors" />
+                  </Link>
+                </div>
+                <CardDescription>Go Architecture Generator</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-slate-600 mb-4">
+                  <li>• Architecture generator for project development</li>
+                  <li>• Supports Go, JavaScript, Python & Java</li>
+                  <li>• Automated project structure creation</li>
+                  <li>• Best practices implementation</li>
+                </ul>
+                <div className="flex space-x-2">
+                  <Badge variant="secondary" className="text-xs">
+                    Go
+                  </Badge>
+                  <Badge variant="secondary" className="text-xs">
+                    CLI
+                  </Badge>
+                  <Badge variant="secondary" className="text-xs">
+                    Architecture
+                  </Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white border-slate-200 hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center justify-between">
                   <CardTitle className="text-lg">Spotify Playlist Generator</CardTitle>
-                  <ExternalLink className="h-4 w-4 text-slate-400" />
+                  <Link href="https://github.com/Lawsonredeye/AudioAlly" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="h-4 w-4 text-slate-400 hover:text-blue-600 transition-colors" />
+                  </Link>
                 </div>
                 <CardDescription>Python, Spotify API (Audioally)</CardDescription>
               </CardHeader>
@@ -418,7 +471,9 @@ export default function JohnDoePortfolio() {
               <CardHeader>
                 <div className="flex items-center justify-between">
                   <CardTitle className="text-lg">Food Delivery Backend</CardTitle>
-                  <ExternalLink className="h-4 w-4 text-slate-400" />
+                  <Link href="https://github.com/Lawsonredeye" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="h-4 w-4 text-slate-400 hover:text-blue-600 transition-colors" />
+                  </Link>
                 </div>
                 <CardDescription>Go, Gin, GORM, MySQL</CardDescription>
               </CardHeader>
@@ -447,7 +502,9 @@ export default function JohnDoePortfolio() {
               <CardHeader>
                 <div className="flex items-center justify-between">
                   <CardTitle className="text-lg">Web Inventory System</CardTitle>
-                  <ExternalLink className="h-4 w-4 text-slate-400" />
+                  <Link href="https://github.com/Lawsonredeye" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="h-4 w-4 text-slate-400 hover:text-blue-600 transition-colors" />
+                  </Link>
                 </div>
                 <CardDescription>Go, MySQL, GORM</CardDescription>
               </CardHeader>
@@ -474,10 +531,12 @@ export default function JohnDoePortfolio() {
           </div>
 
           <div className="text-center mt-12">
-            <Button variant="outline" size="lg" className="border-slate-300 hover:bg-slate-50">
-              <Github className="mr-2 h-4 w-4" />
-              View All Projects on GitHub
-            </Button>
+            <Link href="https://github.com/Lawsonredeye" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="lg" className="border-slate-300 hover:bg-slate-50">
+                <Github className="mr-2 h-4 w-4" />
+                View All Projects on GitHub
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -498,32 +557,34 @@ export default function JohnDoePortfolio() {
                 <Mail className="mr-2 h-5 w-5" />
                 Send Email
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="text-lg px-8 border-white text-white hover:bg-white hover:text-blue-600"
-              >
-                <Download className="mr-2 h-5 w-5" />
-                Download Resume
-              </Button>
+              <Link href="/resume.pdf" download="John_Doe_Resume.pdf">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="text-lg px-8 border-white hover:bg-white hover:text-blue-600 text-zinc-800"
+                >
+                  <Download className="mr-2 h-5 w-5" />
+                  Download Resume
+                </Button>
+              </Link>
             </div>
             <div className="flex items-center justify-center space-x-6 pt-8">
               <Link
-                href="https://twitter.com/lawsonredeye"
+                href="https://twitter.com/johndoe"
                 className="flex items-center space-x-2 text-blue-100 hover:text-white transition-colors"
               >
                 <Twitter className="h-6 w-6" />
                 <span className="hidden sm:inline">Twitter</span>
               </Link>
               <Link
-                href="https://linkedin.com/in/lawson-omoregbee"
+                href="https://linkedin.com/in/johndoe"
                 className="flex items-center space-x-2 text-blue-100 hover:text-white transition-colors"
               >
                 <Linkedin className="h-6 w-6" />
                 <span className="hidden sm:inline">LinkedIn</span>
               </Link>
               <Link
-                href="mailto:omoregbeeolawson@gmail.com"
+                href="mailto:john.doe@email.com"
                 className="flex items-center space-x-2 text-blue-100 hover:text-white transition-colors"
               >
                 <Mail className="h-6 w-6" />
@@ -542,7 +603,7 @@ export default function JohnDoePortfolio() {
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600">
                 <Code className="h-5 w-5 text-white" />
               </div>
-              <span className="text-xl font-bold">Lawson Omoregbee</span>
+              <span className="text-xl font-bold">{"Lawson Omoregbee"}</span>
             </div>
 
             <div className="flex items-center space-x-6">
@@ -562,7 +623,7 @@ export default function JohnDoePortfolio() {
           </div>
 
           <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; {new Date().getFullYear()} Lawson Omoregbee. All rights reserved. Built with Next.js and Tailwind CSS.</p>
+            <p>&copy; {new Date().getFullYear()} John Doe. All rights reserved. Built with Next.js and Tailwind CSS.</p>
           </div>
         </div>
       </footer>
