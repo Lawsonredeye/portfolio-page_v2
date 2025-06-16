@@ -544,7 +544,7 @@ export default function JohnDoePortfolio() {
       {/* Contact CTA Section */}
       <section id="contact" className="py-20 md:py-32 bg-blue-600 text-white">
         <div className="container px-4 md:px-6 text-center">
-          <div className="space-y-8 max-w-3xl mx-auto">
+          <div className="space-y-8 max-w-3xl mx-auto text-slate-500 text-slate-600">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
               Let's Build Something Amazing Together
             </h2>
@@ -553,16 +553,18 @@ export default function JohnDoePortfolio() {
               solutions. Let's connect and explore how we can work together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="text-lg px-8 bg-white text-blue-600 hover:bg-slate-100">
-                <Mail className="mr-2 h-5 w-5" />
-                Send Email
-              </Button>
-              <a href="/resume.pdf" download="Lawson_Omoregbee_Resume.pdf">
+              <a href="mailto:omoregbeeolawson@gmail.com?subject=Hiring%20Inquiry%20-%20Backend%20Developer&body=Hi%20Lawson,%0D%0A%0D%0AI'm%20interested%20in%20discussing%20a%20potential%20project/opportunity%20with%20you.%0D%0A%0D%0ABest%20regards">
                 <Button
                   size="lg"
-                  variant="outline"
-                  className="text-lg px-8 border-white hover:bg-white hover:text-blue-600 text-white"
+                  variant="secondary"
+                  className="text-lg px-8 bg-white text-blue-600 hover:bg-slate-100"
                 >
+                  <Mail className="mr-2 h-5 w-5" />
+                  Send Email
+                </Button>
+              </a>
+              <a href="/resume.pdf" download="Lawson_Omoregbee_Resume.pdf">
+                <Button size="lg" className="text-lg px-8 bg-blue-600 hover:bg-blue-700 text-white">
                   <Download className="mr-2 h-5 w-5" />
                   Download Resume
                 </Button>
